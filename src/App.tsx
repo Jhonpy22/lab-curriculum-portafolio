@@ -6,9 +6,11 @@ import { Skills } from './components/sections/Skill'
 import { Project } from './components/sections/Project'
 import { Contact } from './components/sections/Contact'
 import { useTheme } from './hooks/useTheme'
+import { useLenis } from './hooks/useLenis'
 
 function App() {
   const { theme } = useTheme()
+  useLenis()
 
   const appClasses =
     theme === 'dark'

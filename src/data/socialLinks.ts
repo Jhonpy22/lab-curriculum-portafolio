@@ -21,7 +21,7 @@ export const footerSocialLinks = [
 export const contactSocialLinks = [
     {
         name: 'Email',
-        href: 'mailto:jhonngranadosrojas@gmail.com',
+        href: 'mailto:jhonngranadosrojas@gmail.com?subject=Contacto desde tu portafolio&body=Hola Jhonn, vi tu portafolio y quisiera contactarte.',
         icon: Mail,
         label: 'jhonngranadosrojas@gmail.com',
     },

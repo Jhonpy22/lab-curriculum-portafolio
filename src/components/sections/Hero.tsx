@@ -1,6 +1,8 @@
 import { Github, Linkedin, ArrowRight, Download } from 'lucide-react'
 import profileImage from '../../assets/images/profile.jpeg'
-import { useTheme } from '../../hooks/useTheme'
+import { useTheme } from '../../hooks/useTheme';
+import cvPdf from '../../assets/portafolio/CV-Jhonn-Granados-Rojas.pdf'
+
 
 const stats = [
   { value: '4+', label: 'Proyectos construidos' },
@@ -73,8 +75,8 @@ export function Hero() {
               </a>
 
               <a
-                href="/cv.pdf"
-                download
+                href={cvPdf}
+                download="CV-Jhonn-Granados-Rojas.pdf"
                 className={`inline-flex items-center gap-2 rounded-xl border px-5 py-3 text-sm font-semibold transition ${
                   isDark
                     ? 'border-zinc-700 bg-zinc-900 text-white hover:border-zinc-500 hover:bg-zinc-800'

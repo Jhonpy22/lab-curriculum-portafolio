@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Moon, Sun, Menu, X, Download } from 'lucide-react'
 import { useTheme } from '../../hooks/useTheme'
+import cvPdf from '../../assets/portafolio/CV-Jhonn-Granados-Rojas.pdf'
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Inicio', href: '#home' },
+  { name: 'Acerca de', href: '#about' },
+  { name: 'Habilidades', href: '#skills' },
+  { name: 'Proyectos', href: '#projects' },
+  { name: 'Contacto', href: '#contact' },
 ]
 
 export function Navbar() {
@@ -64,7 +65,7 @@ export function Navbar() {
               {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </button>
 
-            <a href="/cv.pdf" download className={downloadClass}>
+            <a href={cvPdf} download="CV-Jhonn-Granados-Rojas.pdf" className={downloadClass}>
               <Download className="h-4 w-4" />
               Descargar CV
             </a>
@@ -103,8 +104,8 @@ export function Navbar() {
             </nav>
 
             <a
-              href="/cv.pdf"
-              download
+              href={cvPdf}
+              download="CV-Jhonn-Rojas.pdf"
               className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-500 px-4 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-cyan-400"
             >
               <Download className="h-4 w-4" />
